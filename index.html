@@ -47,14 +47,26 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "MarketingAgency",
+          "@type": ["MarketingAgency", "LocalBusiness"],
           "@id": "https://imersaodigital8k.com.br/#organization",
           "name": "Imersão Digital 8K",
-          "description": "Agência especializada em posicionamento de autoridade, SEO Local e Inteligência Artificial para Médicos e Advogados em Porto Alegre.",
+          "description": "Agência especializada em posicionamento de autoridade, SEO Local e Inteligência Artificial para Médicos e Advogados em Porto Alegre e Canoas.",
           "url": "https://imersaodigital8k.com.br/",
           "logo": "https://imersaodigital8k.com.br/img/logo-imersao-ia-inteligencia-artificial-porto-alegre.png",
           "image": "https://imersaodigital8k.com.br/img/agencia-inteligencia-artificial-design-redes-sociais-porto-alegre.webp",
           "telephone": "+55-51-99536-7825",
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Porto Alegre",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-30.0346",
+            "longitude": "-51.2177"
+          },
           "areaServed": [
             { "@type": "City", "name": "Porto Alegre" },
             { "@type": "City", "name": "Canoas" }
@@ -63,12 +75,21 @@
             "@type": "Person",
             "name": "Karina Barbosa da Rosa",
             "jobTitle": "Especialista em Marketing Digital e SEO",
+            "url": "https://imersaodigital8k.com.br/#especializacao",
             "image": "https://imersaodigital8k.com.br/img/karina-rosa-especialista-inteligencia-artificial-imersao-digital-8k.webp",
             "alumniOf": [
               { "@type": "CollegeOrUniversity", "name": "Universidade Luterana do Brasil (ULBRA)" },
               { "@type": "CollegeOrUniversity", "name": "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS)" }
             ]
           }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://imersaodigital8k.com.br/#webpage",
+          "url": "https://imersaodigital8k.com.br/marketing-medicos-advogados-porto-alegre",
+          "name": "Agência de Marketing Ético para Médicos e Advogados em Porto Alegre",
+          "about": { "@id": "https://imersaodigital8k.com.br/#organization" },
+          "isPartOf": { "@id": "https://imersaodigital8k.com.br/#organization" }
         },
         {
           "@type": "FAQPage",
@@ -597,7 +618,7 @@
                     <img src="img/logo-imersao-ia-inteligencia-artificial-porto-alegre.webp" 
                          onerror="this.src='https://placehold.co/180x60/0c0a0d/ff007f?text=Imersão+8K'"
                          alt="Logo Imersão Digital 8K" 
-                         class="h-12 w-auto object-contain mix-blend-lighten contrast-125 mb-6" loading="lazy">
+                         class="h-12 w-auto object-contain mix-blend-lighten contrast-125 mb-6" width="180" height="60" loading="lazy">
                     <p class="text-sm leading-relaxed mb-6">A Imersão Digital 8K é especializada em SEO Local, Inteligência Artificial e Arquitetura de Conversão para profissionais liberais de alto padrão em Porto Alegre e Canoas.</p>
                 </div>
                 
